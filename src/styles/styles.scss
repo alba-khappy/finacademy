@@ -1,0 +1,279 @@
+// @font-face {
+//     font-family: 'SF-R';
+//     src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'), url('../fonts/SFProDisplay-Regular.woff') format('woff');
+// }
+
+// @font-face {
+//     font-family: 'SF-M';
+//     src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'), url('../fonts/SFProDisplay-Medium.woff') format('woff');
+// }
+
+// @font-face {
+//     font-family: 'SF-B';
+//     src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), url('../fonts/SFProDisplay-Bold.woff') format('woff');
+// }
+
+@mixin flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin ulAlign {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin  borderRadius {
+    border-radius: 8px;
+}
+
+$black: #141617;
+$blue: #038AAA;
+$yellow: #FFD200;
+$white: #FFFFFF;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF-R', serif;
+    color: #141617;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container-secion {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 160px;
+}
+
+/*header*/
+
+.header--container{
+    @include flexSpaceBetween;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header__h1 {
+    font-size: 35px;
+}
+
+.header__ul {
+    @include flexSpaceBetween;
+}
+
+.header__nav {
+    width: 60%;
+}
+
+.header__a {
+    font-size: 18px;
+}
+
+
+
+
+
+/*about*/
+
+.about {
+    background-image: url(../images/bg-1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 100%;
+}
+
+.about--container {
+    @include flexSpaceBetween;
+    flex-direction: column;
+    padding: 90px 0 90px 50px;
+}
+
+.about__p--main-text {
+    max-width: 1120px;
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 100px;
+}
+
+.about__p--text {
+    max-width: 1120px;
+    text-align: left;
+    font-size: 18px;
+}
+/*team*/
+
+h2 {
+
+    font-family: 'SF-M', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.team__ul {
+    @include ulAlign;
+}
+
+.team__li {
+
+    @include borderRadius;
+    max-width: 300px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.06);
+    background-color: $white;
+}
+
+.team__img {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.team__h3 {
+    font-size: 25px;
+    color: $blue;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team__p {
+    font-size: 18px;
+    text-align: left;
+}
+
+/*partners*/
+
+.partners__ul {
+    @include ulAlign;
+}
+
+.partners__li {
+    max-width: 290px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: $white;
+}
+
+/*products*/
+
+.products__ul {
+    @include ulAlign;
+}
+
+.products__li {
+    @include borderRadius;
+    max-width: 550px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    color: $white;
+    padding: 0 30px;
+}
+
+.products__h4 {
+    font-size: 35px;
+}
+
+.products__p {
+    font-size: 20px;
+}
+
+.products__a {
+    color: $white;
+    font-size: 25px;
+}
+
+/*news*/
+
+.news {
+    background-color: #D5DCE2;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+
+/*footer*/
+
+.footer {
+    background-color: $black;
+    color: $white;
+
+    a {
+        color: $white;
+    }
+}
+
+.footer__socials {
+    &:first-child {
+        background-image: url(../images/instagram.svg);
+        background-repeat: no-repeat;
+    }
+
+    &:last-child {
+        background-image: url(../images/fb.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+@media (max-width: 1600px) and (min-width:1025px) {
+/*header*/
+/*about*/
+/*team*/
+/*partners*/
+/*products*/
+/*news*/
+/*footer*/
+}
+
+@media (max-width: 1024px) and (min-width:769px) {
+/*header*/
+/*about*/
+/*team*/
+/*partners*/
+/*products*/
+/*news*/
+/*footer*/
+}
+
+@media (max-width: 768px) and (min-width:320px) {
+/*header*/
+/*about*/
+/*team*/
+/*partners*/
+/*products*/
+/*news*/
+/*footer*/
+}
