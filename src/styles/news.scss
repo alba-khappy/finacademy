@@ -43,6 +43,7 @@
 
 .swiper-slide--container {
     margin-right: 30px;
+    width: 50%;
 }
 
 .swiper-slide {
@@ -90,6 +91,10 @@ span.swiper-pagination-bullet:focus {
         text-align: center;
     }
 
+    .swiper-slide--container {
+        width: 100%;
+    }
+
     .swiper-slide {
         flex-direction: column-reverse;
     }
@@ -129,6 +134,10 @@ span.swiper-pagination-bullet:focus {
 
     .swiper-slide {
         flex-direction: column-reverse;
+    }
+
+    .swiper-slide--container {
+        width: 100%;
     }
 
     .news__img {

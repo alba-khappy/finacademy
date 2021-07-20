@@ -46,6 +46,15 @@ a:focus {
     outline: none;
 }
 
+.button--change-language {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: $yellow;
+    font-family: "Montserrat", sans-serif;
+}
+
 @media (min-width: 1270px) {
     .container-secion {
         max-width: 1920px;
@@ -73,5 +82,9 @@ a:focus {
     .container-secion {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .button--change-language {
+        margin-bottom: 20px;
     }
 }

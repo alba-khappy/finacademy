@@ -5,7 +5,7 @@ document.getElementById('burger').addEventListener('click', function () {
     document.querySelector('#firstLine').classList.toggle('burger__line--first');
     document.querySelector('#secondLine').classList.toggle('burger__line--second');
     document.querySelector('#thirdLine').classList.toggle('burger__line--third');
-    
+
 })
 
 
