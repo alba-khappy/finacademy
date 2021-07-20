@@ -66,7 +66,7 @@ a:focus {
   }
 }
 .about {
-  background-image: url(../images/bg-1920.jpg);
+  background-image: url("./images/bg-1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 100%;
@@ -133,7 +133,7 @@ a:focus {
 }
 @media (max-width: 768px) and (min-width: 320px) {
   .about {
-    background-image: url("../images/bg-320.jpg");
+    background-image: url("./images/bg-320.jpg");
   }
 
   .about--container {
@@ -262,12 +262,12 @@ a:focus {
   background-size: contain;
 }
 .footer__socials:first-child {
-  background-image: url(../images/instagram.svg);
+  background-image: url(./images/instagram.svg);
   background-repeat: no-repeat;
   margin-right: 55px;
 }
 .footer__socials:last-child {
-  background-image: url(../images/fb.svg);
+  background-image: url(./images/fb.svg);
   background-repeat: no-repeat;
 }
 
@@ -743,15 +743,15 @@ a:focus {
 }
 
 .news__img--1 {
-  background-image: url(../images/news1.jpg);
+  background-image: url(./images/news1.jpg);
 }
 
 .news__img--2 {
-  background-image: url(../images/news2.jpg);
+  background-image: url(./images/news2.jpg);
 }
 
 .news__img--3 {
-  background-image: url(../images/news3.jpg);
+  background-image: url(./images/news3.jpg);
 }
 
 .swiper-container {
@@ -1611,7 +1611,7 @@ a:focus {
   }
 }
 .about {
-  background-image: url(../images/bg-1920.jpg);
+  background-image: url("./images/bg-1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 100%;
@@ -1678,7 +1678,7 @@ a:focus {
 }
 @media (max-width: 768px) and (min-width: 320px) {
   .about {
-    background-image: url("../images/bg-320.jpg");
+    background-image: url("./images/bg-320.jpg");
   }
 
   .about--container {
@@ -2350,15 +2350,15 @@ a:focus {
 }
 
 .news__img--1 {
-  background-image: url(../images/news1.jpg);
+  background-image: url(./images/news1.jpg);
 }
 
 .news__img--2 {
-  background-image: url(../images/news2.jpg);
+  background-image: url(./images/news2.jpg);
 }
 
 .news__img--3 {
-  background-image: url(../images/news3.jpg);
+  background-image: url(./images/news3.jpg);
 }
 
 .swiper-container {
@@ -2595,12 +2595,12 @@ a:focus {
   background-size: contain;
 }
 .footer__socials:first-child {
-  background-image: url(../images/instagram.svg);
+  background-image: url(./images/instagram.svg);
   background-repeat: no-repeat;
   margin-right: 55px;
 }
 .footer__socials:last-child {
-  background-image: url(../images/fb.svg);
+  background-image: url(./images/fb.svg);
   background-repeat: no-repeat;
 }
 
