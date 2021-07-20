@@ -1,0 +1,149 @@
+@import "general.scss";
+
+/*team*/
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.team {
+    padding: 50px 0;
+}
+
+.team--h2 {
+    margin-bottom: 30px;
+}
+
+.team__ul {
+    @include ulAlign;
+    margin-bottom: 50px;
+}
+
+.team__li {
+    @include borderRadius;
+    max-width: 300px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.06);
+    background-color: $white;
+}
+
+.team__img {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.team__h3 {
+    font-size: 25px;
+    color: $blue;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team__p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.team__button {
+    display: block;
+    max-width: 280px;
+    background-color: $yellow;
+    border-radius: 50px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team__button:focus {
+    background-color: $yellow;
+    box-shadow: 4px 4px 21px 3px rgba(34, 60, 80, 0.2);
+}
+
+.team__button:hover {
+    background-color: #ffe778;
+}
+
+.team__button:active {
+    background-color: #dfbd27;
+}
+
+@media (max-width: 1600px) and (min-width: 1270px) {
+    .team__ul {
+        flex-wrap: wrap;
+    }
+
+    .team__li {
+        margin: 0 50px 30px 50px;
+    }
+}
+
+@media (max-width: 1269px) and (min-width: 1025px) {
+    .team__li {
+        margin: 0 50px 30px 50px;
+    }
+
+    .products__li:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .team__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .team__h3 {
+        font-size: 20px;
+    }
+
+    .team__li {
+        height: 310px;
+        padding: 20px;
+    }
+
+    .team__li {
+        margin: 0 30px 20px 30px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .team__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .team__h3 {
+        font-size: 18px;
+    }
+
+    .team__ul {
+        margin-bottom: 20px;
+    }
+
+    .team__li {
+        height: 310px;
+        padding: 20px;
+        margin: 0 15px 20px 15px;
+    }
+
+    .team__p {
+        font-size: 14px;
+    }
+}

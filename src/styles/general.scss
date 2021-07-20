@@ -1,0 +1,77 @@
+@mixin flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin ulAlign {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin borderRadius {
+    border-radius: 8px;
+}
+
+$black: #141617;
+$blue: #038aaa;
+$yellow: #ffd200;
+$white: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #141617;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+li {
+    list-style-type: none;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+@media (min-width: 1270px) {
+    .container-secion {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+@media (max-width: 1269px) and (min-width: 1025px) {
+    .container-secion {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .container-secion {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .container-secion {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,126 @@
+@import "general.scss";
+
+.products {
+    padding-bottom: 50px;
+}
+
+.products--h2 {
+    margin-bottom: 50px;
+}
+
+.products__ul {
+    @include ulAlign;
+}
+
+.products__li {
+    @include borderRadius;
+    width: 550px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $blue;
+    color: $white;
+    padding: 0 30px;
+}
+
+.products__li:focus {
+    background-color: #109ebf;
+}
+
+.products__h4 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.products__p {
+    font-size: 20px;
+}
+
+.products__a {
+    color: $white;
+    font-size: 25px;
+}
+
+.products__a:focus {
+    font-weight: 600;
+}
+
+.products__a:focus::after {
+    border-right: 4px solid $white;
+    border-bottom: 4px solid $white;
+}
+
+.products__a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid $white;
+    border-bottom: 3px solid $white;
+    transform: rotate(-45deg) translateY(15px);
+}
+
+@media (max-width: 1600px) and (min-width: 1270px) {
+    .products__ul {
+        flex-direction: column;
+    }
+
+    .products__li:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1269px) {
+    .products__ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1269px) and (min-width: 1025px) {
+
+    .products__li:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .products__h4,
+    .products__a {
+        font-size: 20px;
+    }
+
+    .products__li {
+        width: 300px;
+        height: 220px;
+
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    .products__p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .products__h4,
+    .products__a {
+        font-size: 20px;
+    }
+
+    .products__li {
+        width: 280px;
+        height: 220px;
+
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    .products__p {
+        font-size: 18px;
+    }
+}
